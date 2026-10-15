@@ -1,0 +1,15 @@
+[project]
+name = "motion-retarget"
+version = "0.1.0"
+
+dependencies = [
+    "numpy",
+    "scipy",
+    "opencv-python",
+    "mediapipe",
+    "trimesh",
+    "pygltflib"
+]
+
+[project.scripts]
+motion-retarget = "motion_retarget.cli:main"
