@@ -1,0 +1,19 @@
+from dataclasses import dataclass
+import numpy as np
+
+@dataclass
+class Joint:
+
+    name: str
+    position: np.ndarray
+
+@dataclass
+class FramePose:
+
+    joints: dict[str, Joint]
+
+@dataclass
+class MotionSequence:
+
+    frames: list[FramePose]
+    fps: float
