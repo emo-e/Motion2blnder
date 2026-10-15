@@ -1,0 +1,10 @@
+MIXAMO_MAPPING = {
+    "hips": "Hips",
+    "spine": "Spine",
+    "neck": "Neck",
+    "head": "Head",
+    "left_shoulder": "LeftArm",
+    "left_elbow": "LeftForeArm",
+    "right_shoulder": "RightArm",
+    "right_elbow": "RightForeArm",
+}
