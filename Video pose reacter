@@ -1,0 +1,7 @@
+class PoseDetector:
+
+    def extract(self, video_path):
+        return self._run_model(video_path)
+
+    def _run_model(self, video_path):
+        raise NotImplementedError
