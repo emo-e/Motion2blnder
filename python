@@ -1,0 +1,8 @@
+class MediaPipeDetector(PoseDetector):
+    pass
+
+class RTMPoseDetector(PoseDetector):
+    pass
+
+class MMPoseDetector(PoseDetector):
+    pass
