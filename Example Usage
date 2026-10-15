@@ -1,0 +1,4 @@
+motion-retarget \
+  --video dance.mp4 \
+  --character robot.glb \
+  --output animation.glb
