@@ -1,0 +1,19 @@
+# pipeline.py
+
+from motion_retarget.pose.detector import PoseDetector
+from motion_retarget.retarget.solver import RetargetSolver
+
+class RetargetPipeline:
+
+    def run(self, video_path, character_path):
+
+        detector = PoseDetector()
+        poses = detector.extract(video_path)
+
+        solver = RetargetSolver()
+        animation = solver.solve(
+            poses=poses,
+            character_file=character_path
+        )
+
+        return animation
