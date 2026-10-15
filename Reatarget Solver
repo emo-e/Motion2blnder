@@ -1,0 +1,22 @@
+class RetargetSolver:
+
+    def solve(self, poses, character_file):
+
+        animation = []
+
+        for pose in poses.frames:
+
+            frame_rotations = {}
+
+            for source_joint, target_bone in self.mapping.items():
+
+                rotation = self.compute_rotation(
+                    pose,
+                    source_joint
+                )
+
+                frame_rotations[target_bone] = rotation
+
+            animation.append(frame_rotations)
+
+        return animation
